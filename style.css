@@ -79,7 +79,7 @@ main {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top;
-  width: 80%;
+  width: 90%;
   height: 80vh;
   display: flex;
   flex-direction: column;
@@ -109,6 +109,47 @@ main {
 #banner .content p {
   line-height: 1.85rem;
   font-size: 1.2rem;
+}
+
+#getConnected {
+  width: 90%;
+  display: flex;
+  height: 90vh;
+}
+
+.content1,
+.content2 {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-content: center;
+  text-align: center;
+  color: whitesmoke;
+  font-size: 1.2rem;
+}
+
+.content1 {
+  background: linear-gradient(to right top, rgba(145, 49, 47, .25), rgba(145, 49, 47, .25)), no-repeat right top url(./assets/img/content1.webp);
+}
+
+.content2 {
+  background: linear-gradient(to right top, rgba(145, 49, 47, .25), rgba(145, 49, 47, .25)), no-repeat top url(./assets/img/content2.webp);
+}
+
+.content1>div,
+.content2>div {
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.content1>div:nth-child(2),
+.content2>div:nth-child(2) {
+  background: linear-gradient(to right top, rgba(145, 49, 47, .25), rgba(145, 49, 47, .25));
+  display: flex;
+  flex-direction: column;
 }
 
 @media screen and (max-width: 768px) {
