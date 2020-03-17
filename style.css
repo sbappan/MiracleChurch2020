@@ -10,7 +10,7 @@ body {
 
 nav {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
   min-height: 12vh;
   background-color: #5d4954;
@@ -23,7 +23,7 @@ nav {
 .nav-links {
   display: flex;
   justify-content: space-around;
-  width: 80%;
+  width: 70%;
   font-family: "Poppins", sans-serif;
 }
 
@@ -50,6 +50,65 @@ nav {
   background-color: whitesmoke;
   margin: 5px;
   transition: all 0.3s ease;
+}
+
+.toggle .line1 {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.toggle .line2 {
+  opacity: 0;
+}
+
+.toggle .line3 {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
+
+.fa-facebook {
+  transform: scale(1.2);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#banner {
+  background-image: linear-gradient(to right top, rgba(138, 110, 110, 0.4), rgba(216, 182, 182, 0.4)), url(./assets/img/bannerTemp.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  width: 80%;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#banner .content {
+  width: 60%;
+  height: 60%;
+  color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#banner h1 {
+  font-size: 5rem;
+  text-align: center;
+}
+
+#banner h4 {
+  font-size: 2rem;
+}
+
+#banner .content p {
+  line-height: 1.85rem;
+  font-size: 1.2rem;
 }
 
 @media screen and (max-width: 768px) {
@@ -88,20 +147,9 @@ nav {
     opacity: 0;
     transform: translateX(50px);
   }
+
   to {
     opacity: 1;
     transform: translateX(0px);
   }
-}
-
-.toggle .line1 {
-  transform: rotate(-45deg) translate(-5px, 6px);
-}
-
-.toggle .line2 {
-  opacity: 0;
-}
-
-.toggle .line3 {
-  transform: rotate(45deg) translate(-5px, -6px);
 }
