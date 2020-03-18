@@ -195,8 +195,8 @@
                     opportunities for members to give back to the community. We hope you find one that fits your
                     passions!</p>
             </div>
-            <div>
-                <div>
+            <div class="slide-show">
+                <div class="mySlides fade">
                     <img src="./assets/img/placeholder.webp" alt="">
                     <h5>Missions in Sri Lanka</h5>
                     <p>
@@ -226,7 +226,7 @@
                         process.
                     </p>
                 </div>
-                <div>
+                <div class="mySlides fade">
                     <img src="./assets/img/placeholder.webp" alt="">
                     <h5>Miracle Academy of Biblical Studies</h5>
                     <p>
@@ -248,7 +248,7 @@
                         the Lord in various capacities their local churches.
                     </p>
                 </div>
-                <div>
+                <div class="mySlides fade">
                     <img src="./assets/img/placeholder.webp" alt="">
                     <h5>Youth and Kids Ministry</h5>
                     <p>At Miracle Church, there is a vibrant group of kids and youths. To fill their young hearts with
@@ -256,6 +256,13 @@
                         section for future events and bring your children to give them the opportunity to connect with
                         other young Christians and build their future together!</p>
                 </div>
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
             </div>
         </section>
         <section id="statementOfFaith">
@@ -284,9 +291,30 @@
                     <div>
                         <p>585 Middlefield Rd., Unit 33 Toronto ON Canada M1V 5B8</p>
                         <p>Pastor John: 416-300-6391</p>
-                        <i class="fa fa-facebook"></i>
                     </div>
-                    <form action=""></form>
+                    <div>
+                        <a href="https://www.facebook.com/IntlMiracleChurch/" target="_blank">
+                            <i class="fa fa-facebook"></i>
+                        </a>
+                    </div>
+                    <div class="formDiv">
+                        <form name='contact' method='POST'>
+                            <input type='hidden' name='form-name' value='contact' />
+                            <p class="hidden">
+                                <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
+                            </p>
+                            <fieldset>
+                                <input type="text" name="fullname" placeholder="Name" required />
+                                <input type="email" name="email" placeholder="Email" required />
+                            </fieldset>
+                            <p>
+                                <textarea name="message" placeholder="Type your message here..."></textarea>
+                            </p>
+                            <p>
+                                <button type="submit">Submit</button>
+                            </p>
+                        </form>
+                    </div>
                 </div>
             </div>
         </section>
