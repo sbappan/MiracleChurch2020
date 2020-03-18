@@ -326,6 +326,82 @@ main button:hover {
   width: 10rem;
 }
 
+#ourMinistries {
+  width: 90%;
+}
+
+#statementOfFaith {
+  display: flex;
+  width: 90%;
+  height: 90vh;
+}
+
+#statementOfFaith>div {
+  display: flex;
+  height: 100%;
+  width: 50%;
+}
+
+#statementOfFaith>div:first-child {
+  background: no-repeat url(./assets/img/statementOfFaith.webp);
+  background-size: cover;
+}
+
+#statementOfFaith>div:nth-child(2) {
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  background-color: #a49999;
+  color: whitesmoke;
+}
+
+#statementOfFaith>div:nth-child(2)>* {
+  margin: 2rem 0;
+}
+
+#statementOfFaith>div:nth-child(2) h3 {
+  font-size: 2rem;
+  font-weight: lighter;
+}
+
+#statementOfFaith button.statement {
+  width: 16rem;
+  height: 2.75rem;
+}
+
+#statementOfFaith button.statement:hover {
+  color: #a49999;
+  background-color: white;
+  cursor: pointer;
+}
+
+#contactUs {
+  background-color: #ebe1e2;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+#contactUs>div {
+  width: 80%;
+  height: 100%;
+  display: flex;
+}
+
+#contactUs>div>div {
+  width: 50%;
+  height: 100%;
+  padding: 4rem 0;
+}
+
+#contactUs>div>div:first-child iframe {
+  height: 100%;
+  width: 100%;
+}
+
 @media screen and (max-width: 768px) {
   body {
     overflow-x: hidden;
