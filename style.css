@@ -6,6 +6,13 @@
 
 body {
   background-color: #ffffff;
+  font-family: 'Roboto Slab', serif;
+  line-height: 1;
+}
+
+p {
+  font-family: 'Lato', sans-serif;
+  line-height: 1.75;
 }
 
 nav {
@@ -96,11 +103,9 @@ main button:hover {
 }
 
 #banner {
-  background-image: linear-gradient(
-      to right top,
+  background-image: linear-gradient(to right top,
       rgba(138, 110, 110, 0.4),
-      rgba(216, 182, 182, 0.4)
-    ),
+      rgba(216, 182, 182, 0.4)),
     url(./assets/img/bannerTemp.webp);
   background-repeat: no-repeat;
   background-size: cover;
@@ -133,7 +138,6 @@ main button:hover {
 }
 
 #banner .content p {
-  line-height: 1.85rem;
   font-size: 1.2rem;
 }
 
@@ -157,40 +161,34 @@ main button:hover {
 }
 
 .content1 {
-  background: linear-gradient(
-      to right top,
+  background: linear-gradient(to right top,
       rgba(145, 49, 47, 0.25),
-      rgba(145, 49, 47, 0.25)
-    ),
+      rgba(145, 49, 47, 0.25)),
     no-repeat right top url(./assets/img/content1.webp);
   background-size: cover;
 }
 
 .content2 {
-  background: linear-gradient(
-      to right top,
+  background: linear-gradient(to right top,
       rgba(145, 49, 47, 0.25),
-      rgba(145, 49, 47, 0.25)
-    ),
+      rgba(145, 49, 47, 0.25)),
     no-repeat top url(./assets/img/content2.webp);
   background-size: cover;
 }
 
-.content1 > div,
-.content2 > div {
+.content1>div,
+.content2>div {
   height: 50%;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
-.content1 > div:nth-child(2),
-.content2 > div:nth-child(2) {
-  background: linear-gradient(
-    to right top,
-    rgba(145, 49, 47, 0.25),
-    rgba(145, 49, 47, 0.25)
-  );
+.content1>div:nth-child(2),
+.content2>div:nth-child(2) {
+  background: linear-gradient(to right top,
+      rgba(145, 49, 47, 0.25),
+      rgba(145, 49, 47, 0.25));
   display: flex;
   flex-direction: column;
 }
@@ -202,7 +200,7 @@ main button:hover {
   margin-top: 5rem;
 }
 
-#whatsHappening > div {
+#whatsHappening>div {
   width: 50%;
   display: flex;
   flex-direction: column;
@@ -212,14 +210,14 @@ main button:hover {
   color: #b53f39;
 }
 
-#whatsHappening > div:nth-child(1) > div {
+#whatsHappening>div:nth-child(1)>div {
   display: flex;
   padding: 1rem 10%;
   flex-wrap: wrap;
   align-items: center;
 }
 
-#whatsHappening > div:nth-child(1) > div > div {
+#whatsHappening>div:nth-child(1)>div>div {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -228,11 +226,11 @@ main button:hover {
   height: 10rem;
 }
 
-#whatsHappening > div:nth-child(1) > div > div i {
+#whatsHappening>div:nth-child(1)>div>div i {
   font-size: 3rem;
 }
 
-#whatsHappening > div:nth-child(1) > div > div > div {
+#whatsHappening>div:nth-child(1)>div>div>div {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -240,7 +238,7 @@ main button:hover {
   height: 5rem;
 }
 
-#whatsHappening > div:nth-child(2) {
+#whatsHappening>div:nth-child(2) {
   background: no-repeat center top url(./assets/img/futureLog.webp);
   background-size: cover;
 }
@@ -256,17 +254,17 @@ main button:hover {
   font-size: 1.1rem;
 }
 
-#getToKnowUs > div:nth-child(1) {
+#getToKnowUs>div:nth-child(1) {
   width: 80%;
   display: flex;
   justify-content: center;
 }
 
-#getToKnowUs > div:nth-child(1) > img {
+#getToKnowUs>div:nth-child(1)>img {
   max-width: 100%;
 }
 
-#getToKnowUs > div:nth-child(2) {
+#getToKnowUs>div:nth-child(2) {
   width: 80%;
   display: flex;
   flex-direction: column;
@@ -274,11 +272,11 @@ main button:hover {
   align-items: center;
 }
 
-#getToKnowUs > div:nth-child(2) > * {
+#getToKnowUs>div:nth-child(2)>* {
   margin: 1rem 0;
 }
 
-#getToKnowUs > div:nth-child(2) > h3 {
+#getToKnowUs>div:nth-child(2)>h3 {
   font-size: 2rem;
   font-weight: lighter;
 }
@@ -294,13 +292,13 @@ main button:hover {
   font-weight: lighter;
 }
 
-#meetOurPastors > div:nth-child(1) {
+#meetOurPastors>div:nth-child(1) {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-#meetOurPastors > div:nth-child(1) h3 {
+#meetOurPastors>div:nth-child(1) h3 {
   font-size: 2rem;
   font-weight: lighter;
 }
@@ -309,20 +307,20 @@ main button:hover {
   color: #91312f;
 }
 
-#meetOurPastors > div:nth-child(2) {
+#meetOurPastors>div:nth-child(2) {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
 }
 
-#meetOurPastors > div:nth-child(2) > div {
+#meetOurPastors>div:nth-child(2)>div {
   width: 25%;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-#meetOurPastors > div:nth-child(2) > div img {
+#meetOurPastors>div:nth-child(2)>div img {
   border-radius: 50%;
   height: 10rem;
   width: 10rem;
